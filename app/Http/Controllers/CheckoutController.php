@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use Auth;
 use App\Models\User;
 use App\Models\Order;
@@ -10,6 +11,14 @@ use App\Models\Country;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Gloudemans\Shoppingcart\Facades\Cart;
+=======
+use Illuminate\Http\Request;
+use Gloudemans\Shoppingcart\Facades\Cart;
+use App\Models\User;
+use App\Models\Country;
+use App\Models\Order;
+use Auth;
+>>>>>>> origin/master
 
 class CheckoutController extends Controller
 {
@@ -17,6 +26,7 @@ class CheckoutController extends Controller
     {
         $userId = Auth::id();
         $user = User::where('id', '=' , $userId)->first();
+<<<<<<< HEAD
         
         $order = new Ordre();
         $order->user_id = $user->id;
@@ -58,6 +68,13 @@ class CheckoutController extends Controller
         $order->save();
 
         return redirect('/hebergements');
+=======
+        //dd($user->id);
+        $cart = Cart::content();
+        $countries = Country::all();
+
+        return view('checkout', compact('cart', 'user', 'countries'));
+>>>>>>> origin/master
     }
 
 

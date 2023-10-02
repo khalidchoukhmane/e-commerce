@@ -52,19 +52,13 @@ Route::get('/ordinateurs-portables', [OrdinateurPortableController::class, 'inde
 
 Route::get('/imprimantes', [ImprimanteController::class, 'index'] );
 
+
 Route::get('/orders', [App\Http\Controllers\OrdersController::class, 'index'] )->name('orders');
-
 Route::get('/materiel', [App\Http\Controllers\MaterialsController::class, 'index'] )->name('materiels');
-
 Route::get('materiel/{id}', [App\Http\Controllers\MaterialsController::class, 'goTo']);
-
-
 Route::get('/services', function () {
     return view('services');
 });
-
-
-
 Route::get('/hebergements', function () {
     return view('hebergement');
 });
@@ -83,39 +77,23 @@ Route::get('/contact', function () {
 
 Route::post('/contact-us', [ContactController::class, 'store'])->name('CONTACT');
 //Manu End
-
-
 //Start Panier links
 Route::get('/checkout', [App\Http\Controllers\CheckoutController::class, 'index'])->middleware('auth');
 
 Route::post('/checkout', [App\Http\Controllers\CheckoutController::class, 'hebergement'])->middleware('auth')->name('hebergement.store');
-
-
 Route::post('/checkout.store', [App\Http\Controllers\CheckoutController::class, 'store'])->middleware('auth');
-
 Route::get('/produits', function () {
     return view('contact');
 });
-
 Route::get('/product-details', function () {
     return view('product-details');
 });
-
-
 //End Panier links
-
 //Account Start
-
 Route::get('/my-account', function () {
     return view('my-account');
 });
-
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
-
-
-
-
-
 //account End

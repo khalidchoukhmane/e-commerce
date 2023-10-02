@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- @if (session('message'))
- <div>{{ session('message') }}</div>	
+ <div>{{ session('message') }}</div>
 @endif --}}
 <!-- Start Search Popup -->
 		<div class="brown--color box-search-content search_active block-bg close__top">
@@ -21,7 +21,7 @@
 		</div>
 		<!-- End Search Popup -->
 
-		
+
         <!-- Start Slider area -->
         <div class="slider-area brown__nav slider--15 slide__activation slide__arrow01 owl-carousel owl-theme">
         	<!-- Start Single Slide -->
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 
-				
+
 				<!-- Start Single Tab Content -->
 				<div class="furniture--4 border--round arrows_style owl-carousel owl-theme row mt--50">
 				@foreach ($produits as $produit)
@@ -85,19 +85,28 @@
 					<div class="product product__style--3">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="product__thumb">
+<<<<<<< HEAD
 								<a class="first__img" href="#"><img src="{{ $produit->image }}" alt="product image"></a>
 								<a class="second__img animation1" href="#"><img src="{{ $produit->image }}" alt="product image"></a>
+=======
+								<a class="first__img" href="single-product"><img src="images/books/1.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="single-product"><img src="images/books/2.jpg" alt="product image"></a>
+>>>>>>> origin/master
 								<div class="hot__box">
 									<span class="hot-label">Nouveaux</span>
 								</div>
 							</div>
 							<div class="product__content content--center">
+<<<<<<< HEAD
 								<h4><a href="#">{{ $produit->libelle  }}</a></h4>
+=======
+								<h4><a href="single-product">{{ $produit->libelle  }}</a></h4>
+>>>>>>> origin/master
 								<ul class="prize d-flex">
 									<li>{{ $produit->new_price }}</li>
 									<li class="old_prize">{{ $produit->previous_price }}</li>
 								</ul>
-								<div class="action">        
+								<div class="action">
 									<div class="actions_inner">
 										<ul class="add_to_links">
 											<li>
@@ -105,8 +114,14 @@
 													@csrf
 													<input type="hidden" name="product_id" value="{{ $produit->id }}">
 													<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-												</form>											
+												</form>
 											</li>
+<<<<<<< HEAD
+=======
+											<!--li><a class="wishlist" href="wishlist"><i class="bi bi-shopping-cart-full"></i></a></li-->
+											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+>>>>>>> origin/master
 										</ul>
 									</div>
 								</div>
@@ -192,14 +207,23 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
+<<<<<<< HEAD
 											<a class="first__img" href="#"><img src="{{ $serveur->image }}" alt="product image"></a>
 											<a class="second__img animation1" href="#"><img src="{{ $serveur->image }}" alt="product image"></a>
+=======
+											<a class="first__img" href="single-product"><img src="images/books/1.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product"><img src="images/books/2.jpg" alt="product image"></a>
+>>>>>>> origin/master
 											<div class="hot__box">
 												<span class="hot-label">PLUS VENDU</span>
 											</div>
 										</div>
 										<div class="product__content content--center content--center">
+<<<<<<< HEAD
 											<h4><a href="#">{{ $serveur->libelle  }}</a></h4>
+=======
+											<h4><a href="single-product">{{ $serveur->libelle  }}</a></h4>
+>>>>>>> origin/master
 											<ul class="prize d-flex">
 												<li>{{ $serveur->new_price }}</li>
 												<li class="old_prize">{{ $serveur->previous_price }}</li>
@@ -212,8 +236,14 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $serveur->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
+<<<<<<< HEAD
+=======
+														<!--li><a class="wishlist" href="wishlist"><i class="bi bi-shopping-cart-full"></i></a></li-->
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+>>>>>>> origin/master
 													</ul>
 												</div>
 											</div>
@@ -230,20 +260,29 @@
 									</div>
 								</div>
 							</div>
-						@else	
+						@else
 							<div class="single__product">
 								<!-- Start Single Product -->
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
+<<<<<<< HEAD
 											<a class="first__img" href="#"><img src="{{ $serveur->image }}" alt="product image"></a>
 											<a class="second__img animation1" href="#"><img src="{{ $serveur->image }}" alt="product image"></a>
+=======
+											<a class="first__img" href="single-product"><img src="images/books/5.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product"><img src="images/books/6.jpg" alt="product image"></a>
+>>>>>>> origin/master
 											<div class="hot__box">
 												<span class="hot-label">Nouveaux</span>
 											</div>
 										</div>
 										<div class="product__content content--center">
+<<<<<<< HEAD
 											<h4><a href="#">{{ $serveur->libelle  }}</a></h4>
+=======
+											<h4><a href="single-product">{{ $serveur->libelle  }}</a></h4>
+>>>>>>> origin/master
 											<ul class="prize d-flex">
 												<li>{{ $serveur->new_price }}</li>
 												<li class="old_prize">{{ $serveur->previous_price }}</li>
@@ -256,8 +295,14 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $serveur->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
+<<<<<<< HEAD
+=======
+														<!--li><a class="wishlist" href="wishlist"><i class="bi bi-shopping-cart-full"></i></a></li-->
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+>>>>>>> origin/master
 													</ul>
 												</div>
 											</div>
@@ -273,14 +318,14 @@
 										</div>
 									</div>
 								</div>
-							</div>		
+							</div>
 						@endif
 						@endforeach
-						
+
 						</div>
 					</div>
 
-					
+
 					<!-- End Single Tab Content -->
 					<!-- Start Single Tab Content -->
 					<div class="row single__tab tab-pane fade" id="nav-ordinateurs-fixes" role="tabpanel">
@@ -292,14 +337,23 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
+<<<<<<< HEAD
 											<a class="first__img" href="#"><img src="{{ $ordinateur_fixe->image }}" alt="product image"></a>
 											<a class="second__img animation1" href="#"><img src="{{ $ordinateur_fixe->image }}" alt="product image"></a>
+=======
+											<a class="first__img" href="single-product"><img src="images/books/1.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product"><img src="images/books/2.jpg" alt="product image"></a>
+>>>>>>> origin/master
 											<div class="hot__box">
 												<span class="hot-label">PLUS VENDU</span>
 											</div>
 										</div>
 										<div class="product__content content--center content--center">
+<<<<<<< HEAD
 											<h4><a href="#">{{ $ordinateur_fixe->libelle  }}</a></h4>
+=======
+											<h4><a href="single-product">{{ $ordinateur_fixe->libelle  }}</a></h4>
+>>>>>>> origin/master
 											<ul class="prize d-flex">
 												<li>{{ $ordinateur_fixe->new_price }}</li>
 												<li class="old_prize">{{ $ordinateur_fixe->previous_price }}</li>
@@ -312,8 +366,14 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $ordinateur_fixe->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
+<<<<<<< HEAD
+=======
+														<!--li><a class="wishlist" href="wishlist"><i class="bi bi-shopping-cart-full"></i></a></li-->
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+>>>>>>> origin/master
 													</ul>
 												</div>
 											</div>
@@ -330,20 +390,29 @@
 									</div>
 								</div>
 							</div>
-						@else	
+						@else
 							<div class="single__product">
 								<!-- Start Single Product -->
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
+<<<<<<< HEAD
 											<a class="first__img" href="#"><img src="{{ $ordinateur_fixe->image }}" alt="product image"></a>
 											<a class="second__img animation1" href="#"><img src="{{ $ordinateur_fixe->image }}" alt="product image"></a>
+=======
+											<a class="first__img" href="single-product"><img src="images/books/5.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product"><img src="images/books/6.jpg" alt="product image"></a>
+>>>>>>> origin/master
 											<div class="hot__box">
 												<span class="hot-label">Nouveaux</span>
 											</div>
 										</div>
 										<div class="product__content content--center">
+<<<<<<< HEAD
 											<h4><a href="#">{{ $ordinateur_fixe->libelle  }}</a></h4>
+=======
+											<h4><a href="single-product">{{ $ordinateur_fixe->libelle  }}</a></h4>
+>>>>>>> origin/master
 											<ul class="prize d-flex">
 												<li>{{ $ordinateur_fixe->new_price }}</li>
 												<li class="old_prize">{{ $ordinateur_fixe->previous_price }}</li>
@@ -356,8 +425,14 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $ordinateur_fixe->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
+<<<<<<< HEAD
+=======
+														<!--li><a class="wishlist" href="wishlist"><i class="bi bi-shopping-cart-full"></i></a></li-->
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+>>>>>>> origin/master
 													</ul>
 												</div>
 											</div>
@@ -373,8 +448,8 @@
 										</div>
 									</div>
 								</div>
-							</div>	
-						@endif		
+							</div>
+						@endif
 						@endforeach
 						</div>
 					</div>
@@ -389,14 +464,23 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
+<<<<<<< HEAD
 											<a class="first__img" href="#"><img src="{{ $ordinateur_portable->image }}" alt="product image"></a>
 											<a class="second__img animation1" href="#"><img src="{{ $ordinateur_portable->image }}" alt="product image"></a>
+=======
+											<a class="first__img" href="single-product"><img src="images/books/1.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product"><img src="images/books/2.jpg" alt="product image"></a>
+>>>>>>> origin/master
 											<div class="hot__box">
 												<span class="hot-label">PLUS VENDU</span>
 											</div>
 										</div>
 										<div class="product__content content--center content--center">
+<<<<<<< HEAD
 											<h4><a href="#">{{ $ordinateur_portable->libelle  }}</a></h4>
+=======
+											<h4><a href="single-product">{{ $ordinateur_portable->libelle  }}</a></h4>
+>>>>>>> origin/master
 											<ul class="prize d-flex">
 												<li>{{ $ordinateur_portable->new_price }}</li>
 												<li class="old_prize">{{ $ordinateur_portable->previous_price }}</li>
@@ -409,8 +493,14 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $ordinateur_portable->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
+<<<<<<< HEAD
+=======
+														<!--li><a class="wishlist" href="wishlist"><i class="bi bi-shopping-cart-full"></i></a></li-->
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+>>>>>>> origin/master
 													</ul>
 												</div>
 											</div>
@@ -427,20 +517,29 @@
 									</div>
 								</div>
 							</div>
-						@else	
+						@else
 							<div class="single__product">
 								<!-- Start Single Product -->
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
+<<<<<<< HEAD
 											<a class="first__img" href="#"><img src="{{ $ordinateur_portable->image }}" alt="product image"></a>
 											<a class="second__img animation1" href="#"><img src="{{ $ordinateur_portable->image }}" alt="product image"></a>
+=======
+											<a class="first__img" href="single-product"><img src="images/books/5.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product"><img src="images/books/6.jpg" alt="product image"></a>
+>>>>>>> origin/master
 											<div class="hot__box">
 												<span class="hot-label">Nouveaux</span>
 											</div>
 										</div>
 										<div class="product__content content--center">
+<<<<<<< HEAD
 											<h4><a href="#">{{ $ordinateur_portable->libelle  }}</a></h4>
+=======
+											<h4><a href="single-product">{{ $ordinateur_portable->libelle  }}</a></h4>
+>>>>>>> origin/master
 											<ul class="prize d-flex">
 												<li>{{ $ordinateur_portable->new_price }}</li>
 												<li class="old_prize">{{ $ordinateur_portable->previous_price }}</li>
@@ -453,8 +552,15 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $ordinateur_portable->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
+<<<<<<< HEAD
+=======
+
+														<!--li><a class="wishlist" href="wishlist"><i class="bi bi-shopping-cart-full"></i></a></li-->
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+>>>>>>> origin/master
 													</ul>
 												</div>
 											</div>
@@ -470,8 +576,8 @@
 										</div>
 									</div>
 								</div>
-							</div>	
-						@endif		
+							</div>
+						@endif
 						@endforeach
 						</div>
 					</div>
@@ -506,7 +612,7 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $imprimant->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
 													</ul>
 												</div>
@@ -524,7 +630,7 @@
 									</div>
 								</div>
 							</div>
-						@else	
+						@else
 							<div class="single__product">
 								<!-- Start Single Product -->
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -550,7 +656,7 @@
 																@csrf
 																<input type="hidden" name="product_id" value="{{ $imprimant->id }}">
 																<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-															</form>											
+															</form>
 														</li>
 													</ul>
 												</div>
@@ -567,7 +673,7 @@
 										</div>
 									</div>
 								</div>
-							</div>	
+							</div>
 						@endif
 						@endforeach
 						</div>
@@ -578,8 +684,8 @@
 		</section>
 		<!-- Start BEst Seller Area -->
 		<!-- Start Recent Post Area -->
-		
-						
+
+
 		<!-- End Recent Post Area -->
 		<!-- Best Sale Area -->
 		<section class="best-seel-area pt--80 pb--60" style="background-color: #EFEFEF;">
@@ -600,7 +706,7 @@
 							<a class="first__img" href="#"><img src="{{ $produit->image }}" alt="product image"></a>
 						</div>
 						<div class="product__content content--center">
-							<div class="action">        
+							<div class="action">
 								<div class="actions_inner">
 									<ul class="add_to_links">
 										<li>
@@ -608,7 +714,7 @@
 												@csrf
 												<input type="hidden" name="product_id" value="{{ $produit->id }}">
 												<button class="btn btn-light cart bi bi-shopping-cart-full"></button>
-											</form>											
+											</form>
 										</li>
 									</ul>
 								</div>

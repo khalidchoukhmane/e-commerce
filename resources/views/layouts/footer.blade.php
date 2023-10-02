@@ -4,6 +4,14 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="footer__widget footer__menu">
+<<<<<<< HEAD
+=======
+								<div class="ft__logo">
+									<a href="index">
+										ATASAWAK.MA
+									</a>
+									</div>
+>>>>>>> origin/master
 								<div class="footer__content">
 									<ul class="social__net social__net--2 d-flex justify-content-center">
 										<li><a href="#"><i class="bi bi-facebook"></i></a></li>
@@ -45,3 +53,4 @@
 				</div>
 			</div>
 </footer>
+

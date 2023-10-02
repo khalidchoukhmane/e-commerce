@@ -2,7 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 ol-lg-12">
+<<<<<<< HEAD
                 <form action="#">
+=======
+                <form action="#">               
+>>>>>>> origin/master
                     <div class="table-content wnro__table table-responsive">
                         <table>
                             <thead>
@@ -18,7 +22,11 @@
                             <tbody>
                                 @foreach ($cart as $cart_content)
                                 <tr>
+<<<<<<< HEAD
                                     <td class="product-thumbnail"><a><img src="images/product/serveur-dell.jpg" alt="product img"></a></td>
+=======
+                                    <td class="product-thumbnail"><a><img src="images/product/sm-3/1.jpg" alt="product img"></a></td>
+>>>>>>> origin/master
                                     <td class="product-name"><a>{{ $cart_content->name }}</a></td>
                                     <td class="product-price"><span class="amount">{{ $cart_content->price }}</td>
                                     <td class="product-quantity">
@@ -29,9 +37,15 @@
                                             <strong style="margin-left:6px; margin-right:6px;"> {{ $cart_content->qty }}</strong>
 
                                             <button class="btn-sm btn-secondary" wire:click="incrementQty('{{ $cart_content->rowId }}')">+</button>
+<<<<<<< HEAD
 
 
                                         </div>
+=======
+                                           
+
+                                        </div>    
+>>>>>>> origin/master
                                     </td>
                                     <td class="product-subtotal">{{ $cart_content->price }}</td>
                                     <td class="">
@@ -43,9 +57,15 @@
                             </tbody>
                         </table>
                     </div>
+<<<<<<< HEAD
                 </form>
                 <div class="cartbox__btn">
 
+=======
+                </form> 
+                <div class="cartbox__btn">
+                
+>>>>>>> origin/master
                 </div>
             </div>
         </div>
@@ -85,5 +105,9 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+    </div>  
+>>>>>>> origin/master
 </div>

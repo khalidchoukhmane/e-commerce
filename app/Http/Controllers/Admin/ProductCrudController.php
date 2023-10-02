@@ -43,10 +43,16 @@ class ProductCrudController extends CrudController
         CRUD::column('type');
         CRUD::column('previous_price');
         CRUD::column('new_price');
+<<<<<<< HEAD
         CRUD::column('promotion_id');
         CRUD::column('category_id');
         CRUD::column('description');
         
+=======
+        CRUD::column('description');
+        CRUD::column('promotion');
+        CRUD::column('category_id');
+>>>>>>> origin/master
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -73,6 +79,7 @@ class ProductCrudController extends CrudController
             'options'         => ['Best Saler' => 'BEST SALER', 'Hot' => 'HOT'],
             'allows_null'     => false,
         ]);
+<<<<<<< HEAD
 
         $this->crud->addField([
             'name'            => 'stock',
@@ -95,6 +102,12 @@ class ProductCrudController extends CrudController
             'src'          => NULL, // null to read straight from DB, otherwise set to model accessor function
         ]);
         CRUD::field('promotion_id');
+=======
+        CRUD::field('previous_price');
+        CRUD::field('new_price');
+        CRUD::field('description');
+        CRUD::field('promotion');
+>>>>>>> origin/master
         CRUD::field('category_id');
 
         /**

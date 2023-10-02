@@ -29,7 +29,6 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
-
     public function promotion()
     {
         return $this->belongsTo(Promotion::class);

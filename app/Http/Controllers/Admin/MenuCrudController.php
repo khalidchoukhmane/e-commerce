@@ -39,7 +39,10 @@ class MenuCrudController extends CrudController
      */
     protected function setupListOperation()
     {
+<<<<<<< HEAD
         $this->crud->removeButton('create');
+=======
+>>>>>>> origin/master
         CRUD::column('nom_element');
         CRUD::column('element');
         CRUD::column('parent_id');

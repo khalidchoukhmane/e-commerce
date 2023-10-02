@@ -91,6 +91,15 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Se Connecter') }}
                                 </button>
+<<<<<<< HEAD
+=======
+
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Mot de passe oublié ?') }}
+                                    </a>
+                                @endif
+>>>>>>> origin/master
                             </div>
                         </div>
                     </form>

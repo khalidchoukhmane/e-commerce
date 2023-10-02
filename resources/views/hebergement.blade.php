@@ -53,7 +53,7 @@
                     </div><!--end col-->
                 </div><!--end row-->
 
-                <div class="row">                    
+                <div class="row">
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div class="card pricing hosting-rate border-0 rounded overflow-hidden">
                             <div class="plan-name p-4 border-bottom">
@@ -65,7 +65,7 @@
                                     <span class="h6 text-muted mb-0 mt-2">$</span>
                                     <span class="price text-primary h1 mb-0">4.99</span>
                                     <span class="h6 text-muted align-self-end mb-1">/mo</span>
-                                </div>                                                    
+                                </div>
                                 <ul class="feature-list list-unstyled mb-0">
                                     <li class="text-muted"><i class="mdi mdi-arrow-right text-primary me-2"></i><span class="fw-bold">10GB</span> Ram</li>
                                     <li class="text-muted"><i class="mdi mdi-arrow-right text-primary me-2"></i><span class="fw-bold">100GB</span> Bandwith</li>
@@ -79,11 +79,11 @@
                                     @csrf
                                     <input type="hidden" name="product_id" value="Commander Basic+">
                                     <button class="btn btn-primary mt-4">Commander Basic+</button>
-                                </form>	
+                                </form>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
+
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div class="card pricing hosting-rate best-plan border-0 rounded">
                             <div class="ribbon ribbon-right ribbon-warning overflow-hidden"><span class="text-center d-block shadow small h6">Meilleure</span></div>
@@ -96,7 +96,7 @@
                                     <span class="h6 text-muted mb-0 mt-2">$</span>
                                     <span class="price text-primary h1 mb-0">8.99</span>
                                     <span class="h6 text-muted align-self-end mb-1">/mo</span>
-                                </div>                                                      
+                                </div>
                                 <ul class="feature-list list-unstyled mb-0">
                                     <li class="text-muted"><i class="mdi mdi-arrow-right text-primary me-2"></i><span class="fw-bold">30GB</span> Ram</li>
                                     <li class="text-muted"><i class="mdi mdi-arrow-right text-primary me-2"></i><span class="fw-bold">500GB</span> Bandwith</li>
@@ -110,11 +110,11 @@
                                     @csrf
                                     <input type="hidden" name="product_id" value="Commander Entreprise">
                                     <button class="btn btn-primary mt-4">Commander Entreprise</button>
-                                </form>	
+                                </form>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
+
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div class="card pricing hosting-rate border-0 rounded overflow-hidden">
                             <div class="plan-name p-4 border-bottom">
@@ -126,7 +126,7 @@
                                     <span class="h6 text-muted mb-0 mt-2">$</span>
                                     <span class="price text-primary h1 mb-0">14.99</span>
                                     <span class="h6 text-muted align-self-end mb-1">/mo</span>
-                                </div>                                                       
+                                </div>
                                 <ul class="feature-list list-unstyled mb-0">
                                     <li class="text-muted"><i class="mdi mdi-arrow-right text-primary me-2"></i><span class="fw-bold">100GB</span> Ram</li>
                                     <li class="text-muted"><i class="mdi mdi-arrow-right text-primary me-2"></i><span class="fw-bold">1000GB</span> Bandwith</li>
@@ -140,13 +140,13 @@
                                     @csrf
                                     <input type="hidden" name="product_id" value="Commander Performance">
                                     <button class="btn btn-primary mt-4">Commander Performance</button>
-                                </form>	
+                                </form>
 
                                 <form  action="{{ route('hebergement.store') }}" method="POST">
                                     @csrf
                                     <input type="hidden" name="product_id" value="Commander Performance+">
                                     <button class="btn btn-primary mt-4">Commander Performance+</button>
-                                </form>	
+                                </form>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -157,4 +157,4 @@
         </section><!--end section-->
         <!-- Price End -->
 
-@endsection		
+@endsection

@@ -82,8 +82,8 @@
 													<input type="text" name="telephone" value="{{$user->telephone }}">
 												</div>
 											</div>
-										</div>	
-								
+										</div>
+
 								<br><br>
 									<div class="product-add-to-cart" style="margin-left:65%; ">
 										<button type="submit" class="btn btn-primary">Commander</button>
@@ -111,9 +111,15 @@
 										<div class="input_box">
 											<label>Pays<span>*</span></label>
 											<select class="select__option" name="pays">
+<<<<<<< HEAD
 												{{-- @foreach ($countries as $country)
 													<option value="{{$country->id }}">{{$country->pays }}</option>
 												@endforeach --}}
+=======
+												@foreach ($countries as $country)
+													<option value="{{$country->id }}">{{$country->pays }}</option>
+												@endforeach
+>>>>>>> origin/master
 											</select>
 										</div>
 										<div class="input_box">
@@ -130,8 +136,8 @@
 												<input type="text" name="telephone">
 											</div>
 										</div>
-									</div>	
-							
+									</div>
+
 								<br><br>
 								<div class="product-add-to-cart" style="margin-left:65%; ">
 									<button type="submit" class="btn btn-primary">Commander</button>
@@ -139,11 +145,11 @@
 							</form>
 							@endif
 
-						</div>	
-					 
+						</div>
+
         			</div>
 
-					
+
         			<div class="col-lg-6 col-12 md-mt-40 sm-mt-40">
         				<div class="wn__order__box">
         					<h3 class="onder__title">Votre commande</h3>
@@ -160,10 +166,10 @@
 
         					</ul>
         					<ul class="shipping__method">
-        						<li>Panier Sous-total <span>{{ \Gloudemans\Shoppingcart\Facades\Cart::subtotal(); }}</span></li>
+        						<li>Panier Sous-total <span>{{ \Gloudemans\Shoppingcart\Facades\Cart::subtotal(), }}</span></li>
         					</ul>
         					<ul class="total__amount">
-        						<li>Total de la commande <span>{{ \Gloudemans\Shoppingcart\Facades\Cart::total(); }}</span></li>
+        						<li>Total de la commande <span>{{ \Gloudemans\Shoppingcart\Facades\Cart::total(), }}</span></li>
         					</ul>
         				</div>
 					    <div id="accordion" class="checkout_accordion mt--30" role="tablist">
@@ -184,4 +190,4 @@
         	</div>
         </section>
         <!-- End Checkout Area -->
-@endsection		
+@endsection

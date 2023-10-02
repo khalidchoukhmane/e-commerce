@@ -1781,9 +1781,13 @@ Header Styles
       transform: translateY(-50%); }
 .header__area .logo {
   height: 90px;
+<<<<<<< HEAD
   line-height: 90px; 
   margin-top: 13px;
 }
+=======
+  line-height: 90px; }
+>>>>>>> origin/master
 .header__area .header__sidebar__right {
   height: 90px;
   list-style: outside none none;

@@ -1,5 +1,4 @@
 @extends('layouts.master')
-
 @section('content')
 		<!-- Start Search Popup -->
 		<div class="box-search-content search_active block-bg close__top">
@@ -55,8 +54,8 @@
 							</p>
                         </div>
                     </div><!--end col-->
-            </div><!--end container-->
+            </div>
+            </div>     <!--end container-->
         </section><!--end section-->
         <!-- Price End -->
-
-@endsection		
+@endsection

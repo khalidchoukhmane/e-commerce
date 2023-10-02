@@ -39,8 +39,11 @@ class ContactCrudController extends CrudController
      */
     protected function setupListOperation()
     {
+<<<<<<< HEAD
         $this->crud->removeButton('create');
         $this->crud->removeButton('update');
+=======
+>>>>>>> origin/master
         CRUD::column('nom');
         CRUD::column('email');
         CRUD::column('subject');

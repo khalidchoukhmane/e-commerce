@@ -4,6 +4,5 @@
 									@foreach ($categories as $categorie)
 										<li><a href="{{ url('/materiel/'.$categorie->id) }}">{{$categorie->category }}</a></li>
 									@endforeach
-
         						</ul>
 </aside>

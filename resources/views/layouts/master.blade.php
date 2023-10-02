@@ -13,9 +13,9 @@
 	<link rel="apple-touch-icon" href="{{ asset('images/logo/logo.png')}}">
 
 	<!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
-	<link href=" {{asset('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800')}}" rel="stylesheet"> 
+	<link href=" {{asset('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800')}}" rel="stylesheet">
 	<link href="{{ asset('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800')}}" rel="stylesheet">
-	<link href="{{ asset('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900') }}" rel="stylesheet"> 
+	<link href="{{ asset('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900') }}" rel="stylesheet">
 
 
 	<!-- Stylesheets -->
@@ -32,7 +32,6 @@
 	<script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
 
 	<link href="{{ asset('css/style.min.css') }}" rel="stylesheet" type="text/css" id="theme-opt" />
-
 	@livewireStyles
 </head>
 <body>
@@ -137,13 +136,21 @@
 	<!-- //Main wrapper -->
 
 	<!-- JS Files -->
+<<<<<<< HEAD
 	<script src="{{ asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
 	<script src="{{ asset('js/popper.min.js') }}"></script>
 	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 	<script src="{{ asset('js/plugins.js') }}"></script>
 	<script src="{{ asset('js/active.js') }}"></script>
-	
+=======
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/active.js"></script>
+>>>>>>> origin/master
+
 	@livewireScripts
-	
+
 </body>
 </html>

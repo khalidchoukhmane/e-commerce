@@ -49,7 +49,6 @@ class ProductRequest extends FormRequest
     public function attributes()
     {
         return [
-            
         ];
     }
 
