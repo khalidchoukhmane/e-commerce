@@ -9,15 +9,15 @@ this an e-commerce app.
 
 ## Some images
 ### Home page
-![home page.JPG](..%2Fhome%20page.JPG)
+![home page.JPG](./public/images/home-page.JPG)
 ### Create account
-![create-account-page.JPG](..%2Fcreate-account-page.JPG)
+![create-account-page.JPG](./public/images/create-account-page.JPG)
 ### Login page
-![login-page.JPG](..%2Flogin-page.JPG)
+![login-page.JPG](./public/images/login-page.JPG)
 ### Product list
-![checkout-product.JPG](..%2Fcheckout-product.JPG)
+![checkout-product.JPG](./public/images/checkout-product.JPG)
 ### Admin Panel by backpack for laravel
-![partir-admin.JPG](..%2Fpartir-admin.JPG)
+![partir-admin.JPG](./public/images/partie-admin.JPG)
 
 ## To run the project locally use this commands by orders
 #### 1. Clone the Repository:
